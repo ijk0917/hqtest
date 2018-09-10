@@ -1,0 +1,23 @@
+package com.imooc.sell.enums;
+
+import com.imooc.sell.service.CategoryService;
+
+import lombok.Getter;
+
+/*
+ * 商品状态
+ * */
+@Getter
+public enum ProductStatusEnum {
+	UP(0,"再架"),
+	DOWN(1,"下架");
+	
+	private Integer code;
+	
+	private String message;
+	
+	private ProductStatusEnum(Integer code,String message) {
+		this.code=code;
+		this.message=message;
+	}
+}
